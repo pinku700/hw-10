@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    width: 1000px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+h1 h2 h3 h4 p{
+    margin: 0;
+}
+nav{
+    background-color: #02918b;
+}
+nav .row{
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    padding: 26px 25px;
+}
+nav ul li a{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+}
+#banner{
+    background-image: url('./img-1.png');
+    height: 725px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#banner .row{
+    align-items: center;
+    justify-content: center;
+    height: 725px;
+    color: #ffffff;
+    flex-direction: column;
+}
+#banner h4{
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+}
+#banner h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 13px;
+}
+#banner p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+#banner img{
+    margin: 30px 0 52px 0;
+}
+#banner button{
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #cfc91d;
+    border: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+#banner button::after{
+    content: '';
+    background: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+#banner button:hover::after {
+    width: 100%;
+}
+#banner button::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: black;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+#banner button:hover::before {
+    width: 100%;
+}
+#banner-2 .row{
+    align-items: center;
+    justify-content: center;
+    height: 422px;
+    flex-direction: column;
+}
+#banner-2 h2{
+    padding: 98px 0 37px 0;
+    font-family:"Open Sans", sans-serif ;
+    font-size: 46px;
+    font-weight: 800px;
+    color: #02918c;
+}
+#banner-2 p{
+    padding: 18px 100px 60px 138px;
+    font-size: 13px;
+    font-family:"Open Sans", sans-serif ;
+    text-align: center;
+}
+#banner-2 p span{
+    padding: 20px;
+   
+}
+#banner-2 p b{
+    font-size: 20px;
+    font-family:"Open Sans", sans-serif ;
+    font-weight: 800px;
+    color: #7e8287;
+}
+#banner-3 .box-1{
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #7e8287;
+}
+#banner-3 .box-1 h4{
+    color: #7e8287;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif  ;
+    font-weight: 800;
+    margin-top: 30px;
+}
+#banner-3 .box-1 p{
+    color: #7e8287;
+    padding: 30px 30px;
+}
+#banner-3 .box-2{
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #7e8287;
+}
+#banner-3 .box-2 h4{
+    color: #7e8287;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif  ;
+    font-weight: 800;
+    margin-top: 30px;
+}
+#banner-3 .box-2 p{
+    color: #7e8287;
+    padding: 30px 30px;
+}
+#banner-3 .box-3{
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #7e8287;
+}
+#banner-3 .box-3 h4{
+    color: #7e8287;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif  ;
+    font-weight: 800;
+    margin-top: 30px;
+}
+#banner-3 .box-3 p{
+    color: #7e8287;
+    padding: 30px 30px;
+}
+#banner-3 .box-4{
+    width: 25%;
+    text-align: center;
+}
+#banner-3 .box-4 h4{
+    color: #7e8287;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif  ;
+    font-weight: 800;
+    margin-top: 30px;
+}
+#banner-3 .box-4 p{
+    color: #7e8287;
+    padding: 30px 30px;
+}
+#banner-4{
+    background-image: url(./img-8.png);
+    background-size: cover;
+}
+#banner-4 .row .box-6{
+    padding: 0 50px;
+}
+#banner-4 .row .box-8{
+    padding: 0 50px;
+}
+#banner-4 .container{
+    width: 90%;
+}
+#banner-4 h2{
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-size: 46px;
+    font-weight: 800px;
+    color: #02918c;
+}
+#banner-4 img{
+    padding: 0 0 20px 0;
+}
+#banner-4 .box-5 img{
+    padding: 20px;
+}
+#banner-4 .box-6 img{
+    padding: 20px;
+}
+#banner-4 .box-7 img{
+    padding: 20px;
+}
+#banner-4 .box-8 img{
+    padding: 20px;
+}
+#banner-5 .row{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 353px;
+}
+#banner-5 h1{
+    color: #02918b;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-size: 46px;
+    font-weight: 800px;
+}
+#banner-5 p span{
+    padding: 0 170px;
+}
+#banner-6 {
+    padding: 100px 0;
+}
+#banner-6 .work-img{
+    width: 25%;
+    position: relative;
+    cursor: pointer;
+}
+#banner-6 .work-img img{
+    width: 100%;
+    display: block;
+}
+#banner-6 .work-img .overlay{
+    background-color: #02918b;
+    inset: 10%;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scale(0);
+}
+#banner-6 .work-img:hover .overlay{
+    opacity: 0.85;
+    visibility: visible;
+    transform: scale(1);
+}
+#banner-6 .work-img .overlay .contains{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#banner-6 .work-img-2{
+    width: 25%;
+    position: relative;
+    cursor: pointer;
+}
+#banner-6 .work-img-2 img{
+    width: 100%;
+    display: block;
+}
+#banner-6 .work-img-2 .overlay{
+    background-color: #02918b;
+    inset: 10%;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scale(0);
+}
+#banner-6 .work-img-2:hover .overlay{
+    opacity: 0.85;
+    visibility: visible;
+    transform: scale(1);
+}
+#banner-6 .work-img-2 .overlay .contains{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#banner-6 .work-img-3{
+    width: 25%;
+    position: relative;
+    cursor: pointer;
+}
+#banner-6 .work-img-3 img{
+    width: 100%;
+    display: block;
+}
+#banner-6 .work-img-3 .overlay{
+    background-color: #02918b;
+    inset: 10%;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scale(0);
+}
+#banner-6 .work-img-3:hover .overlay{
+    opacity: 0.85;
+    visibility: visible;
+    transform: scale(1);
+}
+#banner-6 .work-img-3 .overlay .contains{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#banner-6 .work-img-4{
+    width: 25%;
+    position: relative;
+    cursor: pointer;
+}
+#banner-6 .work-img-4 img{
+    width: 100%;
+    display: block;
+}
+#banner-6 .work-img-4 .overlay{
+    background-color: #02918b;
+    inset: 10%;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scale(0);
+}
+#banner-6 .work-img-4:hover .overlay{
+    opacity: 0.85;
+    visibility: visible;
+    transform: scale(1);
+}
+#banner-6 .work-img-4 .overlay .contains{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#banner-6 .work-img-5{
+    width: 25%;
+    position: relative;
+    cursor: pointer;
+}
+#banner-6 .work-img-5 img{
+    width: 100%;
+    display: block;
+}
+#banner-6 .work-img-5 .overlay{
+    background-color: #02918b;
+    inset: 10%;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scale(0);
+}
+#banner-6 .work-img-5:hover .overlay{
+    opacity: 0.85;
+    visibility: visible;
+    transform: scale(1);
+}
+#banner-6 .work-img-5 .overlay .contains{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#banner-6 .work-img-6{
+    width: 25%;
+    position: relative;
+    cursor: pointer;
+}
+#banner-6 .work-img-6 img{
+    width: 100%;
+    display: block;
+}
+#banner-6 .work-img-6 .overlay{
+    background-color: #02918b;
+    inset: 10%;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scale(0);
+}
+#banner-6 .work-img-6:hover .overlay{
+    opacity: 0.85;
+    visibility: visible;
+    transform: scale(1);
+}
+#banner-6 .work-img-6 .overlay .contains{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#banner-6 .work-img-7{
+    width: 25%;
+    position: relative;
+    cursor: pointer;
+}
+#banner-6 .work-img-7 img{
+    width: 100%;
+    display: block;
+}
+#banner-6 .work-img-7 .overlay{
+    background-color: #02918b;
+    inset: 10%;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scale(0);
+}
+#banner-6 .work-img-7:hover .overlay{
+    opacity: 0.85;
+    visibility: visible;
+    transform: scale(1);
+}
+#banner-6 .work-img-7 .overlay .contains{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#banner-6 .work-img-8{
+    width: 25%;
+    position: relative;
+    cursor: pointer;
+}
+#banner-6 .work-img img{
+    width: 100%;
+    display: block;
+}
+#banner-6 .work-img-8 .overlay{
+    background-color: #02918b;
+    inset: 10%;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scale(0);
+}
+#banner-6 .work-img-8:hover .overlay{
+    opacity: 0.85;
+    visibility: visible;
+    transform: scale(1);
+}
+#banner-6 .work-img-8 .overlay .contains{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#banner-7 .row{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 353px;
+}
+#banner-7 h1{
+    color: #02918b;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-size: 46px;
+    font-weight: 800px;
+}
+#banner-7 p span{
+    padding: 0 170px;
+}
+#banner-8 .row{
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+}
+#banner-8 .row p{
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    color: #ffffff;
+    padding: 40px 0;
+}
+#banner-8 .row button{
+    padding: 6px 30px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    background-color: #cfc91d;
+    border: 0;
+}
+#banner-8 .row button{
+    font-size: 14px;
+    font-weight: 800;
+    font-family: "Open Sans", sans-serif;
+}
+#banner-8{
+    height: 570px;
+    background-color: black;
+}
+#banner-8 .row p{
+    color: #7e8287;
+}
+
+
+
+
+   
